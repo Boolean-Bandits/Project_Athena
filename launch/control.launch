@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <node name = "pid_wall_follower" pkg = "fssim_nav" type = "pid_error.py" output = "screen">
+    <rosparam command="load" file="$(find fssim_nav)/params.yaml"/>
+  </node>
+
+  <node name = "heading_generator" pkg = "fssim_nav" type = "control.py" output = "screen">
+    <rosparam command="load" file="$(find fssim_nav)/params.yaml"/>
+  </node>
+</launch>
