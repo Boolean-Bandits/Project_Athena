@@ -72,8 +72,8 @@ def control(data):
     if velocity > 2.5:
         velocity = 2
 
-    velocity *= 3.5
-    angle /= 1.25
+    # velocity *= 3.5
+    # angle /= 1.25
 
     iteration+=1
     total += velocity
